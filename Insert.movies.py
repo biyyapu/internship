@@ -7,9 +7,9 @@ conn=sqlite3.connect("movies.db")
 cur=conn.cursor()
 
 # inserting multiple movies details
-moviesList= [('I','Vikram','Amy Jackson','Shankar',2015),
-             ('Master','Vijay','Malavika Mohanan','Lokesh Kanagaraj',2021),
-             ('Singam 3','Surya','Anushka Shetty','Hari',2017)]
+moviesList= [('AA','Nithin','samantha','Trivikram',2018),
+             ('Murari','Mahesh Babu','sonali bindre','krishna Vamsi',2001),
+             ('Mirchi','prabhas','Anushka Shetty','Koratala Siva',2015)]
 
 cur.executemany("insert into Movies values(?,?,?,?,?)",moviesList)
 
